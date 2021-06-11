@@ -10,15 +10,25 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:auto-theme.helloWorld"
+        "onCommand:auto-theme.helloWorld",
+		"onCommand:auto-dark-mode-windows.toggle",
+		"onStartupFinished"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [{
             "command": "auto-theme.helloWorld",
             "title": "Hello World"
-
-		}]
+		},
+		{
+			"command": "auto-theme.activthemechanger",
+            "title": "Activate Auto Theme Changer"
+		},
+		{
+			"command": "auto-dark-mode-windows.toggle",
+            "title": "Toggle"
+		}
+		]
 	},
 	"scripts": {
 		"lint": "eslint .",
